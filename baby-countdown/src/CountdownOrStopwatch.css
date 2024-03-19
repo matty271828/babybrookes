@@ -1,0 +1,45 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .timer-content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #FFFFFF; /* Light background for a friendly vibe */
+  }
+  
+  h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .time {
+    flex: 1;
+    background: #0088a9; /* A deep, safe blue for a mix of military and sports feel */
+    color: #ffffff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .time {
+      font-size: 14px;
+      padding: 10px 5px;
+    }
+  }
+  
