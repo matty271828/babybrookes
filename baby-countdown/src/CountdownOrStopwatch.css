@@ -1,45 +1,63 @@
 .timer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .timer-content {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background: #FFFFFF; /* Light background for a friendly vibe */
-  }
-  
-  h1 {
-    color: #4a4a4a;
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-  
-  .countdown {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.timer-content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #FFFFFF; /* Light background for readability and friendly vibe */
+}
+
+h1 {
+  color: #4a4a4a;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust based on layout preference */
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 5px;
+  min-width: 80px; /* Prevents width changes with single to double digits */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 1.5em; /* Larger number size */
+}
+
+.unit {
+  font-size: 0.8em; /* Smaller unit name size */
+  margin-top: auto; /* Pushes unit to the bottom */
+}
+
+/* Adjusting background colors for each time unit to baby-themed pastel */
+.days { background-color: #fbdedf; /* Soft pink */ }
+.hours { background-color: #cffadf; /* Soft mint */ }
+.minutes { background-color: #fcf4bd; /* Soft yellow */ }
+.seconds { background-color: #d3e0fa; /* Soft blue */ }
+
+@media (max-width: 600px) {
   .time {
-    flex: 1;
-    background: #0088a9; /* A deep, safe blue for a mix of military and sports feel */
-    color: #ffffff;
-    padding: 15px 10px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px 5px;
   }
-  
-  @media (max-width: 600px) {
-    .time {
-      font-size: 14px;
-      padding: 10px 5px;
-    }
-  }
+}
+
   
