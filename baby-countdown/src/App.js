@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import CountdownOrStopwatch from './CountdownOrStopwatch'; // Assuming the component is saved in this file
 
 function App() {
